@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Videojuegos"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="409dp"
+        android:layout_height="605dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+<!-- encabezados-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Nombre"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Desarrollador"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Imagen"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </TableRow>
+        <!-- datos-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Majora's Mask"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Nintendo"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <ImageView
+                android:id="@+id/imageview1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/majora"
+                tools:srcCompat="@tools:sample/avatars"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Smash Bros."
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Nintendo"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <ImageView
+                android:id="@+id/imageview2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/smash"
+                tools:srcCompat="@tools:sample/avatars"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Skyrim"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Bethesda"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <ImageView
+                android:id="@+id/imageview3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/skyrim"
+                tools:srcCompat="@tools:sample/avatars"
+                />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
